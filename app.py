@@ -79,7 +79,7 @@ with col2:
     sabang_file = st.file_uploader("사방넷.xlsx (시트0 사용)", type=["xlsx"])
 
 with st.expander("⚙️ 옵션(선택)"):
-    forced_year = st.number_input("연도 강제 설정 (미설정=자동)", min_value=2000, max_value=2100, value=0, step=1)
+    forced_year = st.number_input("연도 강제 설정 (미설정=자동)", min_value=0, max_value=2100, value=0, step=1)
     forced_month = st.number_input("월 강제 설정 (미설정=자동)", min_value=0, max_value=12, value=0, step=1)
     out_name = st.text_input("파일명 접두어 (미입력시 자동)", value="제네시스_정산")
 
